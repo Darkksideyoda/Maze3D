@@ -16,13 +16,13 @@ function App() {
           azimuth={0.25}
         />
         <Stars
-          radius={100}
+          radius={300}
           depth={50}
           count={5000}
           factor={4}
           saturation={0}
           fade
-          speed={1}
+          speed={2}
         />
         <ambientLight intensity={0.5} />
         <spotLight position={[50, 10, 10]} angle={0.15} penumbra={1} />
@@ -30,12 +30,7 @@ function App() {
         <Wall
           wallPosition={[1, 1, 1]}
           wallTextureUri={WallTexure}
-          wallMeasures={[3, 25, 10]}
-        />
-        <Wall
-          wallPosition={[1, 1, 15]}
-          wallTextureUri={WallTexure}
-          wallMeasures={[3, 25, 10]}
+          wallMeasures={[500, 100, 10]}
         />
       </Canvas>
     </div>
